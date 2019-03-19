@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Things I Regret</title>
+  <style type="text/css">
+	body{
+    background-image: url(./assets/image/sadFace.jpg);
+    background-repeat: repeat-y;
+    font-family: 'Alfa Slab One', cursive;
+  }
+
+ 
+
+
+	</style>
+  <!-- Bootstrap CSS CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+  <!-- Style to fix the issue of text extending past card length -->
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Main Bootstrap Search -->
+  <div class="container">
+
+    <!-- Jumbotron for Title -->
+
+
+    <!-- Row for Searching  -->
+    <div class="row">
+      <div class="types">
+        <h1>So many regrets</h1>
+
+        <!-- First card is for handling the search parameters -->
+
+        <div id="button"></div>
+
+        <!-- Here we create an HTML Form for handling the inputs-->
+        <div id="form">
+
+          <!-- Here we create the text box for capturing the search term-->
+          <div class="form-group">
+            <label for="search-term">Search for Something You Regret Here</label>
+            <input type="text" id="search-term">
+          </div>
+
+          <button type="submit" class="btn btn-default" id="run-search">
+            <button class="btn btn-default" id="clear-all">
+              <i class="fa fa-trash"></i> Clear Results</button>
+              <input id="addExpress" type="submit" value="Submit">
+
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- This row will handle all of the retrieved articles -->
+  <div class="row">
+    <div class="col-sm-12">
+      <br>
+
+      <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
+      <div class="card">
+
+        <!-- card Heading for the retrieved articles box -->
+        <div class="card-header">
+          <strong>
+            <i class="fa fa-table"></i> Top Regrets</strong>
+        </div>
+
+	  <!-- Buttons go Here  -->
+    <div id="buttons"></div>
+        <!-- This main card will hold each of the resulting articles -->
+        <div id="article-section" data-state="still"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer Region -->
+
+
+  </div>
+
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Code to the JavaScript File -->
+  <script src="gif.js"></script>
+
+</body>
+
+</html>
