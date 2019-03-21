@@ -2,9 +2,9 @@
   
   
   $(document).ready(function() {    
-  var regrets = ['men', 'dairy', 'drexting'];      
+  var regrets = ['males', 'dairy', 'drunk texting', 'Daddy issues'];      
   function buttonZone(){      
-    $('buttons').empty();      
+    $('#buttons').empty();      
     for (var i = 0; i < regrets.length; i++) {        
       var eachButton = $('<button>');        
       eachButton.addClass('expression');       
@@ -21,7 +21,7 @@
       var regret1 = $(this).html();
       console.log(regret1);
       // queryURL is the url we'll use to query the API
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=&api_key=dc6zaTOxFJmzC&limit=10" + regret1 + "ZW4zJGmo1G7uQhAvNwNrbdzBQHkakn7O";
+      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + regret1 + "&api_key=dc6zaTOxFJmzC&limit=10ZW4zJGmo1G7uQhAvNwNrbdzBQHkakn7O&limit=10";
       $.ajax({ url: queryURL, method: 'GET' })
         .done(function (response) {
           // grabs data
@@ -30,20 +30,21 @@
           // clear out div before adding more gifs
           $('#article-section').empty();
   
-          for (var j = 0; j < results.length; j++) {
-            var gifDiv = $('<div>');
-            var imageView = results[j].images.fixed_height.url;
-            var still = results[j].images.fixed_height_still.url;
+          for (var i = 0; i < results.length; i++) {
+            var gifDiv = $('<div class="col-md-4">');
+            var imageView = results[i].images.fixed_height.url;
+            var still = results[i].images.fixed_height_still.url;
             //console.log(imageView)
             var showImage = $('<img>').attr("src", still).attr('data-animate', imageView).attr('data-still', still);
             showImage.attr('data-state', 'still');
             $('#article-section').prepend(showImage);
             showImage.on('click', playGif);
             // get rating
-            var rating = results[j].rating;
+            var rating = results[i].rating;
             console.log(rating);
             var showRating = $('<p>').text("Rated: " + rating);
-            $('#article-section').prepend(showRating);
+            gifDiv.append(showImage, showRating);
+            $('#article-section').prepend(gifDiv);
   
   
   
