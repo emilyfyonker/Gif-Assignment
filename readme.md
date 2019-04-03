@@ -6,3 +6,4 @@ Get started by entering a search term in the Submit field. 10 gifs will populate
 This project is maintained and created by Emily Yonker.
 
 https://github.com/emilyfyonker/Gif-Assignment.git
+https://emilyfyonker.github.io/Gif-Assignment/
