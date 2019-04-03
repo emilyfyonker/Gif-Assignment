@@ -2,7 +2,7 @@
   
   
   $(document).ready(function() {    
-  var regrets = ['males', 'dairy', 'drunk texting', 'Daddy issues'];      
+  var regrets = ['males', 'dairy', 'drunk texting', 'Daddy issues', ];      
   function buttonZone(){      
     $('#buttons').empty();      
     for (var i = 0; i < regrets.length; i++) {        
