@@ -7,4 +7,4 @@ This project is maintained and created by Emily Yonker.
 
 https://github.com/emilyfyonker/Gif-Assignment.git
 
-https://emilyfyonker.github.io/Gif-Assignment
+https://emilyfyonker.github.io/Gif-Assignment/
