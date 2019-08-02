@@ -21,7 +21,7 @@
       var regret1 = $(this).html();
       console.log(regret1);
       // queryURL is the url we'll use to query the API
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + regret1 + "&api_key=dc6zaTOxFJmzC&limit=10ZW4zJGmo1G7uQhAvNwNrbdzBQHkakn7O&limit=10";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + regret1 + "&api_key=dc6zaTOxFJmzC&limit=10ZW4zJGmo1G7uQhAvNwNrbdzBQHkakn7O&limit=10";
       $.ajax({ url: queryURL, method: 'GET' })
         .done(function (response) {
           // grabs data

@@ -1,5 +1,5 @@
 body{
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Noto Serif', serif;
 
 
 }
@@ -12,6 +12,7 @@ body{
 .form-group{
     font-size: 35px;
     text-align: center;
+    font-family: 'Noto Serif', serif;
 }
 
 head{
